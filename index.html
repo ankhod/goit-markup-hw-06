@@ -52,6 +52,7 @@
         </button>
       </div>
 
+      <!--
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
           <button class="mobile-menu-close" data-menu-close>Close</button>
@@ -60,7 +61,8 @@
           <div>Soc link</div>
         </div>
       </div>
-    </header>
+    </header> -->
+
     <main>
       <!-- Hero Section -->
       <section class="section hero">
@@ -610,7 +612,7 @@
 
     <!------------------- Modal ----------------->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="form-icons-close" height="8" width="8">
@@ -678,5 +680,97 @@
       </div>
     </div>
     <script src="./js/menu.js"></script>
+
+    <!-------------- Mobile menu --------------->
+
+    <div class="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" type="button">
+          <svg class="mobile-menu-close-icon" height="8" width="8">
+            <use href="./images/icons.svg#icon-close-black.svg"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-item-link-1" href="./index.html"
+                >Studio
+              </a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-item-link" href="">Portfolio </a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-item-link" href="">Contacts </a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-item">
+              <a
+                class="mobile-menu-address-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="mobile-menu-address-item">
+              <a class="mobile-menu-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="mobile-menu-contacts-list">
+          <li class="mobile-menu-contacts-list-item">
+            <a href="" class="mobile-menu-contacts-list-item-link">
+              <svg
+                class="mobile-menu-contacts-list-item-link-svg"
+                height="24"
+                width="24"
+              >
+                <use href="./images/icons.svg#icon-instagram.svg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-contacts-list-item">
+            <a href="" class="mobile-menu-contacts-list-item-link">
+              <svg
+                class="mobile-menu-contacts-list-item-link-svg"
+                height="24"
+                width="24"
+              >
+                <use href="./images/icons.svg#icon-twitter.svg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-contacts-list-item">
+            <a href="" class="mobile-menu-contacts-list-item-link">
+              <svg
+                class="mobile-menu-contacts-list-item-link-svg"
+                height="24"
+                width="24"
+              >
+                <use href="./images/icons.svg#icon-facebook.svg"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-contacts-list-item">
+            <a href="" class="mobile-menu-contacts-list-item-link">
+              <svg
+                class="mobile-menu-contacts-list-item-link-svg"
+                height="24"
+                width="24"
+              >
+                <use href="./images/icons.svg#icon-linkedin.svg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
