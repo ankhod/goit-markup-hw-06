@@ -380,6 +380,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
   .what-list {
     flex-wrap: nowrap;
     column-gap: 24px;
@@ -506,6 +510,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
   .team-list {
     gap: 24px;
   }
@@ -599,6 +607,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .section {
+    padding: 120px 0;
+  }
+
   .portfolio-list {
     gap: 48px 24px;
   }
@@ -628,7 +640,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-left: 0;
+
   gap: 72px;
 }
 
@@ -642,7 +654,7 @@ button {
 .page-logo-footer {
   display: inline-block;
   flex-wrap: wrap;
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -696,7 +708,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
 }
 
 .social-list-footer {
@@ -777,10 +789,17 @@ button {
   margin-left: 16px;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 644px;
+@media screen and (max-width: 767px) {
+  .social-media {
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+@media screen and (min-width: 768px) {
+  /* .container {
+    max-width: 644px;
+  } */
 
   .container-footer {
     column-gap: 24px;
@@ -814,9 +833,9 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
+  /* .container {
     max-width: 1158px;
-  }
+  } */
 
   .page-footer {
     padding-top: 100px;
@@ -827,7 +846,7 @@ button {
     align-items: baseline;
     gap: 0px;
     flex-wrap: nowrap;
-    padding-left: 0px;
+    padding-left: 15px;
   }
 
   .page-footer-block-left {
@@ -927,7 +946,6 @@ button {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  max-width: 256px;
 }
 
 .modal-input-field {
@@ -1251,21 +1269,30 @@ button {
   gap: 24px;
 }
 
-.mobile-menu-address-link {
+.mobile-menu-address-link-mail {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #434455;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.mobile-menu-address-link-tel {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #4d5ae5;
+  font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-nav-item:hover,
 .mobile-menu-nav-item:focus,
-.mobile-menu-address-link:hover,
-.mobile-menu-address-link:focus {
+.mobile-menu-address-link-mail:hover,
+.mobile-menu-address-link-mail:focus {
   color: #404bbf;
 }
 
